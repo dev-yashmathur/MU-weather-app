@@ -33,16 +33,19 @@ input[type=text] {
   width: 50%;
   padding: 0.75em 1.25em;
   margin: 0.5em 0;
+  border:0.0625em grey;
   box-sizing: border-box;
   font-weight: bold;
   position: absolute;
-  left: 50%;
+  left: 34%;
+  float: left;
   transform: translateX(-50%);
 }
 nav button {
   position: absolute;
   left: 80%;
   transform: translateX(-70%);
+  
 }
 h1{
   color:rgb(61, 55, 55);
@@ -52,7 +55,18 @@ h1{
   background-color:rgb(193,230,57);
 
 }
-
+#location-button{
+  float: right;
+  width: 25%;
+  margin: 0.30em 0;
+  padding: 0.5em 1.55em;
+  color: black;
+  font-size: 1.0625em;
+  border: 0.0625em grey;
+  cursor: pointer;
+  
+  
+}
 nav ul {
   list-style-type: none;
   padding: 0;
