@@ -18,7 +18,7 @@ weather.temperature = {
 const KELVIN = 273;
 
 // API KEY
-const key = "82005d27a116c2880c8f0fcb866998a0";
+const key = "292cbfb8af33950664e9c64cfb438a8d";
 
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
@@ -67,7 +67,7 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    console.log(`${weather.temperature.value}`);
+    //console.log(`${weather.temperature.value}`);
     tempElement.innerHTML = `${weather.temperature.value}${String.fromCharCode(176)}<span>C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
@@ -101,7 +101,7 @@ function weatherOnClick() {
   let city = document.getElementById("city-input").value;
   let txt = city;
   city = txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  console.log(city);
+  //console.log(city);
   let api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
 
   fetch(api)
